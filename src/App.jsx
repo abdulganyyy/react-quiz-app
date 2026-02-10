@@ -30,7 +30,7 @@ export default function App() {
 			return;
 		}
 
-		const timeLimitSec = 120;
+		const timeLimitSec = 30;
 
 		const init = {
 			username: user.username,

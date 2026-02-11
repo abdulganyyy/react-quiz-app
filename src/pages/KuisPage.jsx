@@ -56,7 +56,7 @@ export default function QuizPage({ initialState, onFinish, onBackToLogin }) {
 		const id = setInterval(tick, 1000);
 		return () => clearInterval(id);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [state.endAt]);
+	}, [state.endAt, state.answers.length, state.finished]);
 
 	const currentQuestion = state.questions?.[state.currentIndex];
 
